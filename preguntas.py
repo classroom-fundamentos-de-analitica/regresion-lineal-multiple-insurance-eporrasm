@@ -145,7 +145,7 @@ def pregunta_04():
     """
 
     # Importe mean_squared_error
-    from sklearn import mean_squared_error as mse
+    from sklearn.metrics import mean_squared_error as mse
 
     # Obtenga el pipeline optimo de la pregunta 3.
     gridSearchCV = pregunta_03()
@@ -172,3 +172,4 @@ def pregunta_04():
 
     # Retorne el error cuadrático medio para entrenamiento y prueba
     return mse_train, mse_test
+print(pregunta_04())
